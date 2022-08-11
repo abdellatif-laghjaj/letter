@@ -82,9 +82,7 @@ body {
 .update-container {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
     flex-direction: column;
-    width: 600px;
 }
 
 .update-now-btn {
