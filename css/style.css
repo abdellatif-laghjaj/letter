@@ -45,25 +45,25 @@ body {
     color: var(--dark-grey-color);
 }
 
-.container .mail{
+.container .mail {
     display: flex;
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
 }
 
-.mail .user{
+.mail .user {
     margin: 8px 0;
     color: var(--dark-grey-color-2);
 }
 
-.mail .body{
+.mail .body {
     margin: 8px 0;
     font-weight: 400;
     color: var(--dark-grey-color-2);
 }
 
-.note{
+.note {
     font-size: 18px;
     font-weight: 400;
     color: var(--dark-color);
@@ -71,12 +71,24 @@ body {
     margin-bottom: 20px;
 }
 
-.kind-regards{
+.kind-regards {
     font-size: 18px;
     font-weight: 400;
     color: #3f3c3f;
     font-weight: 600;
     margin-bottom: 20px;
+}
+
+.update-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 600px;
+}
+
+.update-now-btn {
+    margin-bottom: 10px;
 }
 
 .btn {
@@ -94,42 +106,44 @@ body {
     margin: 8px auto;
     text-transform: uppercase;
     border: none;
-    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5), 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1);
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5), 7px 7px 20px 0px rgba(0, 0, 0, .1), 4px 4px 5px 0px rgba(0, 0, 0, .1);
     background: #d90429;
-  }
- .btn:hover {
+}
+
+.btn:hover {
     background-color: #ef233c;
-  }
- .btn:active {
+}
+
+.btn:active {
     top: 2px;
-  }
+}
 
-  .mail p{
+.mail p {
     font-size: 18px;
     color: var(--dark-grey-color-2);
     margin: 8px 0;
-  }
+}
 
-  .paragraph{
+.paragraph {
     font-size: 18px;
     color: var(--dark-grey-color-2);
     margin: 8px 0;
-  }
+}
 
-  footer{
+footer {
     font-size: 16px;
     background-color: var(--dark-color);
     color: rgb(199, 197, 197);
     margin: 8px 0;
     padding: 10px;
-  }
+}
 
-  a{
+a {
     color: #339afc;
-  }
+}
 
-  /* Media Queries */
-  @media only screen and (max-width: 677px) {
+/* Media Queries */
+@media only screen and (max-width: 677px) {
     .container {
         width: 90%;
         max-width: 90%;
@@ -143,4 +157,4 @@ body {
     .container .subtitle {
         font-size: 18px;
     }
-  } 
+}
