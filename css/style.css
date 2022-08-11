@@ -38,29 +38,11 @@ body {
     text-align: center;
 }
 
-.container .subtitle {
-    font-size: 24px;
+.subtitle {
+    font-size: 28px;
     font-weight: 600;
     margin-bottom: 20px;
-    color: var(--dark-grey-color);
-}
-
-.container .mail {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-}
-
-.mail .user {
-    margin: 8px 0;
-    color: var(--dark-grey-color-2);
-}
-
-.mail .body {
-    margin: 8px 0;
-    font-weight: 400;
-    color: var(--dark-grey-color-2);
+    color: #000;
 }
 
 .note {
@@ -116,15 +98,10 @@ body {
     top: 2px;
 }
 
-.mail p {
-    font-size: 18px;
-    color: var(--dark-grey-color-2);
-    margin: 8px 0;
-}
-
 .paragraph {
     font-size: 18px;
-    color: var(--dark-grey-color-2);
+    font-weight: 600;
+    color: #2f2d2f;
     margin: 8px 0;
 }
 
@@ -153,6 +130,6 @@ a {
     }
 
     .container .subtitle {
-        font-size: 18px;
+        font-size: 24px;
     }
 }
