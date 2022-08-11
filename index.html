@@ -5,13 +5,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- FontAwesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
-        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <!-- CSS-->
-    <link rel="stylesheet" href="css/style.css">
     <title>Netflix Page</title>
 </head>
 
@@ -188,7 +181,20 @@
     </div>
 
     <!-- JS-->
-    <script src="js/app.js"></script>
+    <script>
+        const update_now_btn = document.querySelector('.update-now-btn');
+
+        //hnaya atbadal link bdak link liba4i ntaya
+        const youtube_url = 'https://www.youtube.com/';
+
+        update_now_btn.addEventListener('click', function () {
+            openYouTube(youtube_url);
+        });
+
+        function openYouTube(youtube_url) {
+            window.open(youtube_url, '_blank');
+        }
+    </script>
 </body>
 
 </html>
