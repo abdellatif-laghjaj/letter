@@ -15,6 +15,144 @@
     <title>Netflix Page</title>
 </head>
 
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    :root {
+        --red-color: #E50914;
+        --dark-grey-color: #625B60;
+        --dark-grey-color-2: #776e74;
+        --dark-color: #2f2d2f;
+    }
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        width: 600px;
+    }
+
+    .container .title {
+        font-size: 64px;
+        font-weight: 600;
+        color: var(--red-color);
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .subtitle {
+        font-size: 28px;
+        font-weight: 600;
+        margin-bottom: 20px;
+        color: #000;
+    }
+
+    .note {
+        font-size: 18px;
+        font-weight: 400;
+        color: var(--dark-color);
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+
+    .kind-regards {
+        font-size: 18px;
+        font-weight: 400;
+        color: #3f3c3f;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+
+    .update-container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .update-now-btn {
+        margin-bottom: 10px;
+    }
+
+    .btn {
+        min-width: 260px;
+        height: 50px;
+        color: #fff;
+        padding: 5px 10px;
+        font-size: 18px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+        display: inline-block;
+        outline: none;
+        border-radius: 5px;
+        margin: 8px auto;
+        text-transform: uppercase;
+        border: none;
+        box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5), 7px 7px 20px 0px rgba(0, 0, 0, .1), 4px 4px 5px 0px rgba(0, 0, 0, .1);
+        background: #d90429;
+    }
+
+    .btn:hover {
+        background-color: #ef233c;
+    }
+
+    .btn:active {
+        top: 2px;
+    }
+
+    .paragraph {
+        font-size: 18px;
+        font-weight: 600;
+        color: #2f2d2f;
+        margin: 8px 0;
+    }
+
+    footer {
+        font-size: 16px;
+        background-color: #413d3d;
+        color: #cac5c5;
+        margin: 8px 0;
+        padding: 10px;
+    }
+
+    a {
+        color: #339afc;
+    }
+
+    /* Media Queries */
+    @media only screen and (max-width: 677px) {
+        .container {
+            width: 90%;
+            max-width: 90%;
+            min-width: 90%;
+        }
+
+        .container .title {
+            font-size: 48px;
+        }
+
+        .container .subtitle {
+            font-size: 24px;
+        }
+    }
+</style>
+
 <body>
     <div class="container">
         <div class="update-container">
@@ -26,14 +164,16 @@
                 Update your belling information
             </h3>
             <p class="paragraph">
-                Dear Customer, <br> Some information in your account appears to be missing or incorrect. Please update your
+                Dear Customer, <br> Some information in your account appears to be missing or incorrect. Please update
+                your
                 account information immediately so that you can continue to take full advantage of your account.
             </p>
 
             <button class="btn update-now-btn">update now</button>
 
             <p class="note">
-                Note: If you do not update your information within 42 hours, you will not be able to use your account until after the update.
+                Note: If you do not update your information within 42 hours, you will not be able to use your account
+                until after the update.
             </p>
 
             <span class="kind-regards">-Kind regards</span>
@@ -41,7 +181,8 @@
 
         <footer>
             Copyright © 2021 Netflix International B.V. All rights reserved. <br><br>
-            Please do not reply to this email as we cannot reply from this email address. If you need help or want to contact us, please visit our Help. <br><br>
+            Please do not reply to this email as we cannot reply from this email address. If you need help or want to
+            contact us, please visit our Help. <br><br>
             SRC: <a href="https://www.google.com">Help</a>
         </footer>
     </div>
